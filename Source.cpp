@@ -22,7 +22,7 @@ int main()
 	c.Show();
 
 	cout << endl << "D1 - D2:" << endl;
-	Pair d1(1, 1), d2(1,1);
+	Pair d1(1, 1), d2(d1);
 	d1 -= d2;
 	d1.Show();
 }

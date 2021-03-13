@@ -17,6 +17,11 @@ public:
 		this->_INT = _INT;
 		this->_DOUBLE = _DOUBLE;
 	}
+	Pair(const Pair &P) 
+	{
+		_INT = P._INT;
+		_DOUBLE = P._DOUBLE;
+	}
 	//methods
 	void Show() 
 	{
@@ -37,4 +42,6 @@ public:
 	void operator-=(Pair arg1);
 	void operator +=(int constant);
 	void operator +=(double constant);
+	//destructor
+	~Pair() {};
 };
